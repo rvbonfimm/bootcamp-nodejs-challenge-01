@@ -1,0 +1,10 @@
+<h3>How Old are You?</h3>
+
+<form action="/checkAge" method="POST">
+    <input type="text" name="age">
+    <button type="submit">Submit</button>
+</form>
+<br>
+{% if message %}
+    <label>{{ message }}</label>
+{% endif %}
